@@ -26,6 +26,12 @@ pipeline {
       }
     }
 
+    stage('Archive File') {
+      steps {
+        archiveArtifacts 'TestLog.txt'
+      }
+    }
+
   }
   environment {
     chromeDriverPath = 'C:\\drivers'
