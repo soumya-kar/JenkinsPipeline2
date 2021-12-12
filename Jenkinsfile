@@ -16,6 +16,12 @@ pipeline {
           }
         }
 
+        stage('TestLog') {
+          steps {
+            writeFile(file: 'TestLog.txt', text: 'This is automated log from Blue Ocean pipeline')
+          }
+        }
+
       }
     }
 
