@@ -26,6 +26,6 @@ pipeline {
 
   }
   environment {
-    Build = ''
+    driver = 'chrome'
   }
 }
