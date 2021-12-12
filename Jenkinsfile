@@ -12,6 +12,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'Testing the app'
+            echo '"chrome driver path is ${chromeDriverPath}"'
           }
         }
 
@@ -27,5 +28,6 @@ pipeline {
   }
   environment {
     driver = 'chrome'
+    chromeDriverPath = 'C:\\drivers'
   }
 }
