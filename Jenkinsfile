@@ -18,7 +18,7 @@ pipeline {
 
         stage('TestLog') {
           environment {
-              localVar = 'Test variable'
+            localVar = 'Test variable'
           }
           steps {
             writeFile(file: 'TestLog.txt', text: 'This is automated log from Blue Ocean pipeline driver and local variable ')
