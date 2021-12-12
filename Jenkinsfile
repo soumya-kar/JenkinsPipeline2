@@ -17,8 +17,11 @@ pipeline {
         }
 
         stage('TestLog') {
+          environment {
+              localVar = 'Test variable'
+          }
           steps {
-            writeFile(file: 'TestLog.txt', text: 'This is automated log from Blue Ocean pipeline')
+            writeFile(file: 'TestLog.txt', text: 'This is automated log from Blue Ocean pipeline driver is ${chromeDriverPath} and local variable ${localVar}')
           }
         }
 
