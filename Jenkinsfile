@@ -27,7 +27,6 @@ pipeline {
 
   }
   environment {
-    driver = 'chrome'
     chromeDriverPath = 'C:\\drivers'
   }
 }
