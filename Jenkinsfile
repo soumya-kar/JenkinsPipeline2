@@ -29,6 +29,9 @@ pipeline {
     }
 
     stage('Deploy') {
+      when {
+        branch 'main'
+      }
       steps {
         input(message: 'Do you want to deploy?', id: 'OK')
         echo 'Deploy the application in Aws'
