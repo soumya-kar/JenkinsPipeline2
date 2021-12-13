@@ -31,7 +31,7 @@ pipeline {
     stage('Deploy') {
       steps {
         input(message: 'Do you want to deploy?', id: 'OK')
-        echo 'Deploy the app in Aws'
+        echo 'Deploy the application in Aws'
       }
     }
 
