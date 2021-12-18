@@ -8,7 +8,7 @@ pipeline {
     stage('Build'){
       steps {
         sh 'node --version'
-        sh pwd
+        sh 'pwd'
       }
 
     }
